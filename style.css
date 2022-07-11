@@ -109,11 +109,33 @@ h3{
   color: white;
 }
 
+.background-pics-desktop{
+  display: none;
+}
+
 .container{
+  position: relative;
     width: 80%;
     max-width: 320px;
     margin-inline: auto;
     background-color: white;    
+}
+
+.top-pic-mobile,
+.bottom-pic-mobile{
+  position: absolute;
+}
+
+.top-pic-mobile{
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.bottom-pic-mobile{
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .inner-container{
@@ -202,6 +224,29 @@ h3{
 }
 
 @media (min-width: 1300px){
+  .background-pics-desktop{
+    display: block;
+  }
+
+  .background-pics-mobile{
+    display: none;
+  }
+
+  .top-pic-desktop,
+  .bottom-pic-desktop{
+    position: absolute;
+  }
+
+  .top-pic-desktop{
+    top: 0;
+    left: 0;
+  }
+
+  .bottom-pic-desktop{
+    bottom: 0;
+    right: 0;
+  }
+
   .star-grid,
   .users-grid{
     display: grid;
